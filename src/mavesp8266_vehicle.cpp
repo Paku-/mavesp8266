@@ -56,10 +56,10 @@ MavESP8266Vehicle::begin(MavESP8266Bridge* forwardTo)
     //-- Start UART connected to UAS
     Serial.begin(getWorld()->getParameters()->getUartBaudRate());
     //-- Swap to TXD2/RXD2 (GPIO015/GPIO013) For ESP12 Only
-#ifdef ENABLE_DEBUG
 #ifdef ARDUINO_ESP8266_ESP12
     Serial.swap();
 #endif
+#ifdef ENABLE_DEBUG
 #endif
     // raise serial buffer size (default is 256)
     Serial.setRxBufferSize(4096);
