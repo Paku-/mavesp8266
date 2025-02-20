@@ -6,4 +6,5 @@ tests
 research
 .pio
 ubuntu-bionic-18.04-cloudimg-console.log
-.vscode/c_cpp_properties.json
+.vscode/
+
